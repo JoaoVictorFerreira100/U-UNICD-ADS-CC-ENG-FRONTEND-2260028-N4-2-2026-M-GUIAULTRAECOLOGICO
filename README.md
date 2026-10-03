@@ -1,7 +1,7 @@
 # U-UNICD-ADS-CC-ENG-FRONTEND-2260028-N4-2-2026-M-GUIAULTRAECOLOGICO
 Projeto de Front-End UNICID
 
-guia-ultra-ecologico-production.up.railway.app
+DNS: guia-ultra-ecologico-production.up.railway.app
 
 Equipe João
 Projeto Guia Ultra Ecológico
