@@ -22,6 +22,7 @@ O objetivo do site é ser um lugar onde as pessoas interessadas em assuntos de p
 O publico alvo é qualquer pessoa interessada no meio ambiente independente da idade, tanto que por isso o site terá uma opção de leitura em voz alta para que até pessoas deficientes visuais possam acessar.
 
 Guia das páginas:
+
 1	home: a parte de entrada do site, onde poderá acessar as páginas que serão listadas abaixo.
 
 2	página de filmes onde terá recomendações de filmes que falam sobre o assunto ambiental e links para assistir e/ou comprar.
