@@ -3,6 +3,8 @@ Projeto de Front-End UNICID
 
 guia-ultra-ecologico-production.up.railway.app
 
+Escopo:
+
 Equipe João
 Projeto Guia Ultra Ecológico
 Integrante: João Victor Ferreira dos Santos Oliveira
