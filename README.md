@@ -1,10 +1,10 @@
-# U-UNICD-ADS-CC-ENG-FRONTEND-2260028-N4-2-2026-M-GUIAECOLOGICO
+# U-UNICD-ADS-CC-ENG-FRONTEND-2260028-N4-2-2026-M-GUIAULTRAECOLOGICO
 Projeto de Front-End UNICID
 
 guia-ultra-ecologico-production.up.railway.app
 
 Equipe João
-Projeto Guia Ecológico
+Projeto Guia Ultra Ecológico
 Integrante: João Victor Ferreira dos Santos Oliveira
 26/09/2026
 Professor: Paulo Sergio Fratta Junior
