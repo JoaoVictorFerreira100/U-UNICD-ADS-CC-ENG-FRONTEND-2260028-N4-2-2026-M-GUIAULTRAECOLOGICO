@@ -1,88 +1,133 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+header {
     background-color: darkgreen;
     text-align: center;
-    padding: 10px;
+    padding: 16px 12px;
     color: cyan;
 }
 
-h1{
-    font-size: 50px;
+h1 {
+    font-size: clamp(28px, 8vw, 50px);
+    margin: 0 0 8px;
 }
-.subtitulo{
-    font-size: 40px;
+
+.subtitulo {
+    font-size: clamp(18px, 5vw, 40px);
+    margin: 0;
 }
-main{
+
+main {
     background-color: olive;
-    padding: 100px;
-    padding: 100px;
-    justify-content: center;
+    padding: clamp(24px, 8vw, 100px);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 30px;
     text-align: center;
 }
-.caixa{
+
+.caixa {
     background-color: blue;
-    height: 450px;
-    width: 460px;
+    width: min(460px, 100%);
+    min-height: 420px;
     display: flex;
-    flex-direction: column;    
-    align-items: center;
-    gap: 8px;
+    flex-direction: column;
+    align-items: stretch;
     justify-content: center;
-    font-size: 25px;
     color: aliceblue;
     border-radius: 10px;
     transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
     border: 3px solid transparent;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    margin-bottom: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     padding: 16px;
-    box-sizing: border-box;
     overflow: hidden;
 }
-.caixa a{
+
+.caixa a {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    gap: 8px;
+    gap: 12px;
     width: 100%;
-    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    flex: 1;
     text-decoration: none;
+    color: aliceblue;
     overflow: hidden;
-    box-sizing: border-box;
 }
+
 .caixa h3,
-.caixa h6{
+.caixa h6 {
     margin: 0;
     max-width: 100%;
-    overflow-wrap: break-word;
+    min-width: 0;
+    flex-shrink: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
-.caixa img{
-    max-width: 100%;
-    max-height: 280px;
+
+.caixa h3 {
+    font-size: clamp(20px, 5vw, 28px);
+}
+
+.caixa h6 {
+    font-size: clamp(13px, 3.4vw, 16px);
+    line-height: 1.35;
+}
+
+.caixa img {
+    display: block;
+    margin: 0 auto;
     width: auto;
     height: auto;
+    max-width: 100%;
+    max-height: min(240px, 40vh);
+    min-width: 0;
+    min-height: 0;
     object-fit: contain;
 }
-.caixa:hover{
+
+.caixa:hover {
     border-color: deepskyblue;
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-footer{
+
+@media (hover: hover) and (pointer: fine) {
+    .caixa:hover {
+        transform: scale(1.03);
+    }
+}
+
+footer {
     background-color: forestgreen;
-    padding: 10px;
-    font-size: 20px;
+    padding: 10px 12px;
+    font-size: clamp(14px, 4vw, 20px);
     text-align: center;
     color: bisque;
+}
+
+@media (max-width: 600px) {
+    .caixa {
+        min-height: 0;
+        padding: 14px;
+    }
+
+    .caixa img {
+        max-height: min(200px, 38vh);
+    }
 }
