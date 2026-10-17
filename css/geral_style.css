@@ -32,7 +32,7 @@ main{
 .caixa{
     background-color: blue;
     height: 750px;
-    width: 460px;
+    width: 660px;
     display: flex;
     flex-direction: column;    
     align-items: center;
