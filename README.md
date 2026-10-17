@@ -43,6 +43,8 @@ Guia das páginas:
 
 10 página de estudos científicos.
 
+Cada página terá de 7 a 8 itens
+
 
 O código vai ser validado no W3C Validator.
 
