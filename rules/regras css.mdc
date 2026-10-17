@@ -1,22 +1,20 @@
-description: CSS semântico e acessível
-globs: public/**/*.css
+description: Padrões de CSS do site
+globs: public/css/**/*.css
 alwaysApply: false
 
-## 1. Objetivo
-Páginas semânticas, acessíveis e iguais ao geral.
+## regras
+- Use as variáveis de :root.
+- Mobile-first: min-width 768/1024px.
+- Foco visível e contraste AA.
 
-## 2. Contexto do projeto
-HTML5 puro, sem frameworks. Site em public/,
-estilos na pasta css (mobile-first).
-
-## 3. Regras detalhadas
+## Regras detalhadas
 - Copie footer do index.html.
 - Toda <img> com alt descritivo; lang="pt-BR".
 - tenha certeza de que cada conteúdo fique em sua caixa devida, sem ficar saindo em hipótese nenhuma.
 
-## 5. Erros a evitar
+## Erros a evitar
 - Não use <div> no lugar de header, nav, main e footer.
 - Não use CSS inline nem frameworks.
 
-## 6. Perguntas
+## Perguntas
 Na dúvida sobre conteúdo ou página, pergunte antes.
