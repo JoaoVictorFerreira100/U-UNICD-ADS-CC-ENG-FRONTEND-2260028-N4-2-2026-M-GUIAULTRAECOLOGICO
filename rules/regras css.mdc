@@ -4,6 +4,7 @@ alwaysApply: false
 
 ## regras
 - Use as variáveis de :root.
+- CSS3 puro, sem frameworks. Site em public/,
 - Mobile-first: min-width 768/1024px.
 - Foco visível e contraste AA.
 
