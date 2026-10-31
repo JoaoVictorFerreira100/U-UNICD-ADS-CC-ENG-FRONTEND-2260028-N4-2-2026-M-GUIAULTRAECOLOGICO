@@ -1,0 +1,45 @@
+#controle-leitura {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #fff;
+    font: 700 14px/1.2 Arial, Helvetica, sans-serif;
+}
+
+#botao-leitura {
+    min-width: 56px;
+    min-height: 40px;
+    padding: 8px 12px;
+    border: 2px solid #8b0000;
+    border-radius: 6px;
+    background: #d00000;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+#botao-leitura:hover {
+    background: #a80000;
+}
+
+#botao-leitura:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+#botao-leitura:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+    #controle-leitura {
+        top: 8px;
+        right: 8px;
+    }
+}
