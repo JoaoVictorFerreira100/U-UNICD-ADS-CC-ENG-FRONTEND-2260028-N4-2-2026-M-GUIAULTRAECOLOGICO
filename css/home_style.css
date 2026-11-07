@@ -30,9 +30,6 @@ h1 {
 
 main {
     background-color: olive;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     padding: 40px 16px;
     display: flex;
     justify-content: center;
