@@ -56,7 +56,10 @@ h1 {
 }
 
 main {
-    background-color: olive;
+    background-image: url("https://s1.static.brasilescola.uol.com.br/be/2022/06/paisagem-natural-floresta.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 40px 16px;
     display: flex;
     justify-content: center;

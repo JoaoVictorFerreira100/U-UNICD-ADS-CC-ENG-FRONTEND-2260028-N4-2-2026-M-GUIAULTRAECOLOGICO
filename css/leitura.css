@@ -27,6 +27,13 @@
     background: #a80000;
 }
 
+#botao-leitura[aria-pressed="true"],
+#botao-leitura[aria-pressed="true"]:hover {
+    border-color: #0284c7;
+    background: #7dd3fc;
+    color: #082f49;
+}
+
 #botao-leitura:focus-visible {
     outline: 3px solid #fff;
     outline-offset: 3px;
