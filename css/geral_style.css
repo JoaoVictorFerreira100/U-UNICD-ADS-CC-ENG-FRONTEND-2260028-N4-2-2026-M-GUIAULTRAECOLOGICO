@@ -163,6 +163,11 @@ main {
     height: 100%;
 }
 
+.galeria-fotografias .caixa img {
+    width: 100%;
+    height: 100%;
+}
+
 .caixa:hover {
     border-color: deepskyblue;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
