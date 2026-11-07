@@ -29,7 +29,7 @@ h1 {
 }
 
 main {
-    background-image: url(https://images.pexels.com/photos/38440480/pexels-photo-38440480.jpeg?cs=srgb&dl=pexels-sargonsama-38440480.jpg&fm=jpg);
+    background-color: olive;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
