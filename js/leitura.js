@@ -42,12 +42,42 @@ if (botaoLeitura instanceof HTMLButtonElement) {
             }
         };
 
+        let ultimoToque = 0;
+        botaoLeitura.addEventListener("pointerdown", (evento) => {
+            if (evento.pointerType === "touch") {
+                ultimoToque = Date.now();
+            }
+        });
+
+        const anunciarLegenda = (continuarLeitura = false, forcar = false) => {
+            const agora = Date.now();
+            if (!forcar && agora - ultimaFalaDeAjuda < 1000) {
+                return;
+            }
+
+            ultimaFalaDeAjuda = agora;
+            const fala = new SpeechSynthesisUtterance("Narração");
+            fala.lang = "pt-BR";
+            if (continuarLeitura) {
+                fala.addEventListener("end", () => {
+                    if (leituraEstaAtiva()) {
+                        iniciarLeitura();
+                    }
+                }, { once: true });
+            }
+            sintetizador.cancel();
+            sintetizador.speak(fala);
+        };
+
         botaoLeitura.addEventListener("click", () => {
             const ativar = !leituraEstaAtiva();
             localStorage.setItem(chaveLeituraAtiva, String(ativar));
             atualizarBotao();
 
-            if (ativar) {
+            const toqueRecente = Date.now() - ultimoToque < 1000;
+            if (toqueRecente) {
+                anunciarLegenda(ativar, true);
+            } else if (ativar) {
                 iniciarLeitura();
             } else {
                 sintetizador.cancel();
@@ -55,18 +85,16 @@ if (botaoLeitura instanceof HTMLButtonElement) {
         });
 
         let ultimaFalaDeAjuda = 0;
-        const falarLegenda = () => {
-            const agora = Date.now();
-            if (agora - ultimaFalaDeAjuda < 1000) {
-                return;
+        botaoLeitura.addEventListener("pointerenter", (evento) => {
+            if (evento.pointerType !== "touch") {
+                anunciarLegenda();
             }
-
-            ultimaFalaDeAjuda = agora;
-            falarTexto("narração");
-        };
-
-        botaoLeitura.addEventListener("pointerenter", falarLegenda);
-        botaoLeitura.addEventListener("focus", falarLegenda);
+        });
+        botaoLeitura.addEventListener("focus", () => {
+            if (Date.now() - ultimoToque >= 1000) {
+                anunciarLegenda();
+            }
+        });
 
         document.addEventListener("click", (evento) => {
             if (!(evento.target instanceof Element)) {
