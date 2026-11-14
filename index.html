@@ -19,6 +19,17 @@
         <p class="subtitulo">Encontre conteúdos relacionados ao meio ambiente</p>
     </header>
     <main>
+        <form id="formulario-nome" class="formulario-validacao" novalidate>
+            <label for="nome">Seu nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" aria-describedby="mensagem-nome">
+            <p id="mensagem-nome" aria-live="polite"></p>
+            <label for="email">Seu e-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" aria-describedby="mensagem-email">
+            <p id="mensagem-email" aria-live="polite"></p>
+            <button type="submit">Validar</button>
+            <p class="aviso-armazenamento">Seus dados ficam salvos neste dispositivo.</p>
+            <p id="status-armazenamento" aria-live="polite"></p>
+        </form>
         <div class="caixa">
             <a href="paginadefilmes.html"><h3>Filmes</h3></a>
         </div>
@@ -51,5 +62,6 @@
         <p>&copy; 2026 - Equipe João | Todos os direitos reservados.</p>
     </footer>
     <script src="js/leitura.js"></script>
+    <script src="js/validacao.js"></script>
 </body>
 </html>

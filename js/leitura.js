@@ -68,6 +68,19 @@ if (botaoLeitura instanceof HTMLButtonElement) {
         botaoLeitura.addEventListener("pointerenter", falarLegenda);
         botaoLeitura.addEventListener("focus", falarLegenda);
 
+        document.addEventListener("click", (evento) => {
+            if (!(evento.target instanceof Element)) {
+                return;
+            }
+
+            const link = evento.target.closest("a[href]");
+            if (link) {
+                sintetizador.cancel();
+            }
+        });
+
+        window.addEventListener("pagehide", () => sintetizador.cancel());
+
         atualizarBotao();
         if (leituraEstaAtiva()) {
             iniciarLeitura();

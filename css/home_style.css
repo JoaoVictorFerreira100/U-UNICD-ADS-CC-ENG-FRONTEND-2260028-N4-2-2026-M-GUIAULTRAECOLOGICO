@@ -97,6 +97,72 @@ main {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+.formulario-validacao {
+    display: grid;
+    gap: 6px;
+    width: 100%;
+    max-width: 380px;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: white;
+    color: #173000;
+    text-align: left;
+    font-size: 15px;
+}
+
+.formulario-validacao input {
+    width: 100%;
+    min-height: 36px;
+    padding: 6px 8px;
+    border: 2px solid #536b36;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.formulario-validacao input.campo-erro {
+    border: 3px solid #b00020;
+}
+
+.formulario-validacao input:focus-visible,
+.formulario-validacao button:focus-visible {
+    outline: 3px solid #147d38;
+    outline-offset: 2px;
+}
+
+.formulario-validacao button {
+    min-height: 36px;
+    border: 0;
+    border-radius: 4px;
+    background-color: darkgreen;
+    color: white;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.formulario-validacao p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.formulario-validacao .mensagem-erro {
+    color: #b00020;
+}
+
+.formulario-validacao .mensagem-sucesso {
+    color: #176b2c;
+}
+
+.formulario-validacao .aviso-armazenamento,
+.formulario-validacao #status-armazenamento {
+    font-size: 12px;
+}
+
+.formulario-validacao #status-armazenamento.status-erro {
+    color: #b00020;
+}
+
 footer {
     background-color: forestgreen;
     padding: 10px 12px;
