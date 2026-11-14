@@ -20,7 +20,7 @@ Curso: Desenvolvimento Front-End Para Web
 Será um site com vários links para sites com vários conteúdos sobre preservação do meio ambiente. Coisas como artes, filmes, jogos, artigos, músicas etc. Cada um separado em páginas de acordo com os temas.
 O objetivo do site é ser um lugar onde as pessoas interessadas em assuntos de preservação ambiental possam encontrar facilmente conteúdos relacionados ao assunto.
 Promover a educação ambiental: disponibilizar informações sobre sustentabilidade, preservação da natureza e problemas ambientais.
-O publico alvo é qualquer pessoa interessada no meio ambiente independente da idade, tanto que por isso o site terá uma opção de leitura em voz alta para que até pessoas deficientes visuais possam acessar.
+O público alvo é qualquer pessoa interessada no meio ambiente, não importando a idade, tanto que por isso o site terá uma opção de leitura em voz alta para que até pessoas deficientes visuais possam acessar.
 
 Guia das páginas:
 
