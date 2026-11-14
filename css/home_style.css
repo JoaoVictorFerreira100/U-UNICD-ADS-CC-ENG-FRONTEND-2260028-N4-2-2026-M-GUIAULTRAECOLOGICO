@@ -104,10 +104,12 @@ main {
     max-width: 380px;
     padding: 14px;
     border-radius: 8px;
-    background-color: white;
+    border: 1px solid #d5dccd;
+    background-color: #fff;
     color: #173000;
     text-align: left;
     font-size: 15px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
 }
 
 .formulario-validacao input {
