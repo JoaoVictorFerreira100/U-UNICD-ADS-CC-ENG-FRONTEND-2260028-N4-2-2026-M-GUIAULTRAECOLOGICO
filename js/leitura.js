@@ -6,7 +6,7 @@ if (botaoLeitura instanceof HTMLButtonElement) {
 
     if (!sintetizador) {
         botaoLeitura.disabled = true;
-        botaoLeitura.title = "A leitura em voz alta não está disponível neste navegador.";
+        botaoLeitura.title = "A narração em voz alta não está disponível neste navegador.";
     } else {
         const leituraEstaAtiva = () =>
             localStorage.getItem(chaveLeituraAtiva) === "true";
@@ -17,7 +17,7 @@ if (botaoLeitura instanceof HTMLButtonElement) {
             botaoLeitura.setAttribute("aria-pressed", String(ativo));
             botaoLeitura.setAttribute(
                 "aria-label",
-                `Leitura ${ativo ? "ativada" : "desativada"}`
+                `Narração ${ativo ? "ativada" : "desativada"}`
             );
         };
 
@@ -62,7 +62,7 @@ if (botaoLeitura instanceof HTMLButtonElement) {
             }
 
             ultimaFalaDeAjuda = agora;
-            falarTexto("leitura");
+            falarTexto("narração");
         };
 
         botaoLeitura.addEventListener("pointerenter", falarLegenda);
