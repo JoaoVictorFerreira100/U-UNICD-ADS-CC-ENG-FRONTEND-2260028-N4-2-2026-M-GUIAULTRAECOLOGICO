@@ -46,7 +46,7 @@
 
 @media (max-width: 480px) {
     #controle-leitura {
-        top: 0;
+        top: 8px;
         right: 8px;
     }
 }
